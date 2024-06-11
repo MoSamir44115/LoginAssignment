@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="mPage" class="d-block">
+
+        <div class="m-auto mt-5    w-75 py-5 px-3 w-custom  container row box-shadow">
+            <div class="col-md-12  mt-5  text-center mx-auto justify-content-center">
+                <div>
+                    <h1 class="text">Smart Login System</h1>
+                </div>
+                <!-- Enter User Name -->
+                <input  id="uName" value="" type="text" class=" username d-none form-control "
+                    placeholder="Enter your Name">
+                <!-- Enter Email -->
+                <input  id="uEmail" value="" type="email" class="email form-control mt-3" placeholder="Enter your Email">
+                <!-- Enter Password -->
+                <input   id="uPass" value="" type="password" class="pass form-control mt-3"
+                    placeholder="Enter your Password">
+                <!-- Incorrect Msg mail or pass word -->
+                <p id ="wrngEmailPass"class=" mt-3 d-none text-danger ">Incorrect Email Or Password</p>
+                <!-- Error Msg All Inputs  -->
+                <p id="errorMessege" class="errorMsg mt-3 d-none text-danger ">All Inputs Are Required</p>
+                <!-- Succes Msg  -->
+                <p id="successMessege" class="succesMsg mt-3 d-none text-success ">Succes</p>
+                <!-- Buttons -->
+                <!-- login btn -->
+                <button id="login" class="mt-3 mb-3 log d-block  w-100 btn btn-outline-primary">Login</button>
+                <!-- Signup -->
+                <button id ="regest" class="signup d-none mt-3 mb-3 w-100  btn btn-outline-primary ">Signup</button>
+
+                <p class="donthaveacc text-white d-block">Don't Have An Account? <a id="signUp" class=" text-white"
+                        href="#">Sign Up</a></p>
+
+                <p class="haveacc text-white d-none">Already Have An Account? <a id="signIn" class="text-white" href="#">Sign in</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- welcome-page -->
+    <section id="welPage" class="wel-page d-none">
+        <nav class=" box-shadow navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container px-3 px-md-5 flex-row-reverse flex-lg-row">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand  text-uppercase text-white">Smart Login</a>
+                <div class=" flex-row-reverse collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <div class="d-flex" role="search">
+                        <button id="btnLogout" class="w-100 btn btn-outline-warning text-white" type="submit">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mx-auto margin-welcome w-wel py-5 px-3   container row box-shadow">
+            <div id="theBox" class="col-md-12    text-center mx-auto justify-content-center">
+              
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/javacode.js"></script>
+
+</body>
+
+</html>
